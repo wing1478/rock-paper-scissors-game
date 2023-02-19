@@ -1,0 +1,51 @@
+
+body{
+    background: black;
+    color: whitesmoke;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+#pageBody{
+    display: flex;
+    flex-direction: row;
+    margin:  400px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.player{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    min-width: 50px;
+    justify-content: center;
+
+}
+.circle{
+    display: flex;
+    
+}
+.cpu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    min-width: 50px;
+    
+}
+
+#score{
+    display:flex;
+    justify-content: center;
+    font-size: 100px;
+    align-items: center;
+
+}

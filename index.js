@@ -32,7 +32,7 @@ function playRound() {
         else if (playerSelection.toLowerCase() === "paper" && computerSelection == "Scissors" ) {return alert("You Lose! Scissors Beats Paper"), cpuScore++}
 
         else if (playerSelection.toLowerCase() === "scissors" && computerSelection == "Rock" ) {return alert("You Lose! Rock Beats Scissors"), cpuScore++}
-        else if (playerSelection.toLowerCase() === "scissors" && computerSelection == "Paper" ) {return alert("You Win! Scissors Beats Paper"), playerScore++}
+        else if (playerSelection.toLowerCase() ==a      4= "scissors" && computerSelection == "Paper" ) {return alert("You Win! Scissors Beats Paper"), playerScore++}
         else if (playerSelection.toLowerCase() === "scissors" && computerSelection == "Scissors" ) {return alert("You Draw! Try Again")}
         
     else return alert (" OH GOD! Something went HORRIBLY wrong! :c")
@@ -58,4 +58,16 @@ function game(rounds){
     }
 }
 
-game(rounds)
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
+
+
+buttons()
